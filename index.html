@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f7f2">
+  <title>Responsive Design Coursework</title>
+  <style>
+    :root {
+      color-scheme: light;
+      font-family: "Trebuchet MS", Verdana, sans-serif;
+      color: #202a34;
+      background: #f7f7f2;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 48px 24px 64px;
+    }
+
+    header {
+      padding: 28px 0 24px;
+      border-bottom: 3px solid #d84f35;
+    }
+
+    h1 {
+      max-width: 620px;
+      margin: 0;
+      font-size: clamp(2rem, 5vw, 3.4rem);
+      line-height: 1.05;
+    }
+
+    header p { max-width: 580px; margin: 14px 0 0; line-height: 1.6; }
+
+    .weeks {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(min(100%, 390px), 1fr));
+      gap: 32px 48px;
+      padding-top: 32px;
+    }
+
+    section { border-top: 1px solid #c8c9c1; padding-top: 14px; }
+    h2 { margin: 0 0 12px; font-size: 1.15rem; }
+    ul { list-style: none; margin: 0; padding: 0; }
+    li + li { border-top: 1px solid #e0e0d9; }
+    a { display: block; padding: 11px 2px; color: #145c62; font-weight: 600; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+    a:hover { color: #a63324; }
+    a:focus-visible { outline: 3px solid #d84f35; outline-offset: 3px; }
+
+    @media (max-width: 520px) {
+      body { padding: 28px 18px 44px; }
+      .weeks { gap: 26px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Responsive Design Coursework</h1>
+    <p>Fluid measurements, media queries, flexible layouts, grid, and Bootstrap examples.</p>
+  </header>
+
+  <main class="weeks">
+    <section aria-labelledby="week-1">
+      <h2 id="week-1">Week 1 · Fluid measurements</h2>
+      <ul>
+        <li><a href="RD-week1-fluid_measurements_starter/index.html">Starter</a></li>
+        <li><a href="RD-week1-fluid_measurements_completed/index.html">Completed example</a></li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="week-2">
+      <h2 id="week-2">Week 2 · Responsive design</h2>
+      <ul>
+        <li><a href="RD-week2-fluid_measurements_and_media_queries_starter/index.html">Fluid measurements and media queries · Starter</a></li>
+        <li><a href="RD-week2-fluid_measurements_and_media_queries_completed/index.html">Fluid measurements and media queries · Completed</a></li>
+        <li><a href="RD-week2-media_queries_pt2/index.html">Media queries, part 2</a></li>
+        <li><a href="RD-week2-responsive_hw_starter/index.html">Responsive homework · Colors</a></li>
+        <li><a href="RD-week2-responsive_navigation_starter/index.html">Responsive navigation · Starter</a></li>
+        <li><a href="RD-week2-responsive_navigation_completed/index.html">Responsive navigation · Completed</a></li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="week-3">
+      <h2 id="week-3">Week 3 · Flexbox and grid</h2>
+      <ul>
+        <li><a href="RD-week3-responsive_flex_starter/index.html">Responsive flex · Starter</a></li>
+        <li><a href="RD-week3-responsive_flex_complete/index.html">Responsive flex · Completed</a></li>
+        <li><a href="RD-week3-responsive_grid_starter/index.html">Responsive grid · Starter</a></li>
+        <li><a href="RD-week3-responsive_grid_complete/index.html">Responsive grid · Completed</a></li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="week-4">
+      <h2 id="week-4">Week 4 · Bootstrap</h2>
+      <ul>
+        <li><a href="RD-week4-bootstrap_grid_example/index.html">Bootstrap grid example</a></li>
+        <li><a href="RD-week4-bootstrap_navigation/index.html">Bootstrap navigation</a></li>
+        <li><a href="RD-week4-final_project_starter/index.html">Final project · Starter</a></li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
